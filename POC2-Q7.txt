@@ -1,0 +1,50 @@
+									POC2-Q7
+Q Prime Numbers 
+
+->
+
+package assignment2;
+
+import java.util.Scanner;
+
+public class PrimeNumEx{
+   
+	public static void main(String[] args)
+	{  
+		int arraySize;
+	 
+	        int count=0;
+		
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter size of an array:");
+        arraySize = sc.nextInt();
+        int newArray[] = new int[arraySize];
+
+        System.out.print("Enter array elements:");
+       		 for ( int i = 0; i <arraySize; i++) 
+       		 {
+        	      newArray[i] = sc.nextInt();
+        	 }
+
+        System.out.print("All prime numbers are:");
+       		 for ( int i = 1; i<=arraySize; i++)
+       		 {  
+        		count=0;
+        		for(int j=2;j<=i/2;j++)
+        		{ 
+			if (i % j == 0)
+        		{
+        		 count++;
+        	         break;
+        		}
+
+                }
+          		 if (count == 0) 
+          		 {
+          		    System.out.print(i+" ");
+       		         }
+         
+         
+	}
+}
