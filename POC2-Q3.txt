@@ -29,7 +29,7 @@ public class PallindromeOrNot {
 			 array1[i]=sc.nextInt();
 			
 	   	 }
-		 System.out.println("Array elements are :");
+		 System.out.println("Array elements are :"); 
 		 
 		 System.out.println(Arrays.toString(array1));
 		 
